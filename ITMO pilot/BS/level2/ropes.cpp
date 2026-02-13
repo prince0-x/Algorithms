@@ -8,6 +8,7 @@ bool cando(double num, vector<int>&a, int cnt){
       }
       return sum>=cnt;
 }
+
 void solve(){
       ll n, m;
       cin>>n>>m;
@@ -23,13 +24,13 @@ void solve(){
                   high = mid;
             }
       }
-      cout<<fixed<<setprecision(7)<<ans<<"\n";
+      cout<<fixed<<setprecision(1)<<ans<<"\n";
 }
+
 int main(){
       ios_base::sync_with_stdio(false);
       cin.tie(nullptr);
       cout.tie(nullptr);
-
       int t = 1;
       // cin >> t;
       while(t--){

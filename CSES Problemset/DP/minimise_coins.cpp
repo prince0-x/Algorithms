@@ -5,6 +5,7 @@ int solve(int amount, vector<int>&coins, vector<int>&dp){
       if(amount==0) return 0;
       if(amount < 0)return INT_MAX;
       if(dp[amount] != -1)return dp[amount];
+      
       int ans= INT_MAX;
       for(auto &coin : coins){
             int state = solve(amount-coin, coins,dp);
